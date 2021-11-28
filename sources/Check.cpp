@@ -45,8 +45,8 @@ double Check::run() {
         break;
   }
   auto t2 = std::chrono::high_resolution_clock::now();
-  duration<double, std::milli> ms = t2 - t1;
-  time = ms.count();
+  duration<double, std::nano> ns = t2 - t1;
+  time = ns.count();
   delete[] arr;
   return time;
 }
@@ -76,5 +76,5 @@ void Check::print(std::ostream& os) {
   << Byte_value(size) << std::endl
   << "\t\tresults:\n"
      <<"\t\t\tduration: "
-  << time << " ms\n";
+  << time << " ns\n";
 }
