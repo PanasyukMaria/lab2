@@ -1,4 +1,4 @@
-//Copyright by C++_developers1488
+//Copyright by MaryMor
 
 #ifndef TEST_CPP_
 #define TEST_CPP_
