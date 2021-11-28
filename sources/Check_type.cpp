@@ -1,4 +1,4 @@
-//Copyright by C++_developers1488
+//Copyright by MaryMorgan
 
 #include "Check.h"
 #include <sstream>
@@ -6,10 +6,10 @@
 std::ostream & operator<<(std::ostream & os, Check_type const & type) {
   switch (type) {
     case _random:
-      os << "_reverse";
+      os << "_random";
       break;
     case _forward:
-      os << "_reverse";
+      os << "_forward";
       break;
     case _reverse:
       os << "_reverse";
@@ -22,10 +22,10 @@ std::string to_string(Check_type type)
   std::stringstream ss;
   switch (type) {
     case _random:
-      ss << "_reverse";
+      ss << "_random";
       break;
     case _forward:
-      ss << "_reverse";
+      ss << "_forward";
       break;
     case _reverse:
       ss << "_reverse";

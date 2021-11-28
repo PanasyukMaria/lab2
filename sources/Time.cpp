@@ -1,4 +1,4 @@
-//Copyright by C++_developers1488
+//Copyright by MaryMorgan
 
 #include "Time.h"
 
@@ -12,6 +12,7 @@ Time::Time(Check_type t, std::vector<int64_t>& sizes) {
     e.run();
     experiments.push_back(e);
   }
+  //std::cout << id << std::endl;
 }
 void Time::print(std::ostream& os) {
   os<< "investigation\n\ttravel_variant: " << to_string(type) << std::endl;
