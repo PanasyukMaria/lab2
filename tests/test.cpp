@@ -20,7 +20,7 @@ TEST(ExperimentTest, printTest)
       "\t\t\tbuffer_size: "+
       Byte_value(e.size) +
       "\n\t\tresults:\n"
-      "\t\t\tduration: "+ std::to_string(e.time) +" ms\n");
+      "\t\t\tduration: "+ std::to_string(e.time) +" ns\n");
   std::string s2 = ss.str();
   ASSERT_EQ(s2, s);
 }
