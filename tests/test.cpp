@@ -1,4 +1,4 @@
-//Copyright by MaryMor
+//Copyright by MaryMorgan
 
 #ifndef TEST_CPP_
 #define TEST_CPP_
