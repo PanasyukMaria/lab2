@@ -5,12 +5,7 @@
 #include <random>
 #include <sstream>
 
-Check::Check(int id, Check_type type, int64_t size)
-{
-  Check::id = id;
-  Check::type = type;
-  Check::size = size;
-}
+
 
 char* Check::initArray()
 {
@@ -21,6 +16,13 @@ char* Check::initArray()
   for (int64_t i=0; i < size; i+=16)
     arr[i] = dist(mt);
   return arr;
+}
+
+Check::Check(int i, Check_type t, int64_t s)
+{
+  Check::id = i;
+  Check::type = t;
+  Check::size = s;
 }
 
 double Check::run() {
