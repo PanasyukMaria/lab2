@@ -18,7 +18,7 @@ void Time::print(std::ostream& os) {
   os<< "investigation\n\ttravel_variant: " << to_string(type) << std::endl;
   for (Check& experiment : experiments)
   {
-    os << "\texperiment:\n";
+    os << "\texperiments:\n";
     experiment.print(os);
   }
 }
