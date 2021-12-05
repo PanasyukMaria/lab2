@@ -5,6 +5,13 @@
 #include <random>
 #include <sstream>
 
+Check::Check(int id, Check_type type, int64_t size)
+{
+  Check::id = id;
+  Check::type = type;
+  Check::size = size;
+}
+
 char* Check::initArray()
 {
   std::random_device rd;
@@ -16,17 +23,9 @@ char* Check::initArray()
   return arr;
 }
 
-Check::Check(int i, Check_type t, int64_t s)
-{
-  Check::id = i;
-  Check::type = t;
-  Check::size = s;
-}
-
-
 double Check::run() {
   using std::chrono::duration;
-  using std::chrono::milliseconds;
+  using std::chrono::nanoseconds;
   char k = 0;
   char* arr = initArray();
   for (int64_t i = 0; i < Check::size; i += 16)
