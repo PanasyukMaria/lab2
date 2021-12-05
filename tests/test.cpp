@@ -18,7 +18,7 @@ TEST(ExperimentTest, printTest)
       "\t\tnumber: 0\n"
       "\t\tinput_data:\n"
       "\t\t\tbuffer_size: "+
-      Byte_value(e.size) +
+      Byte(e.size) +
       "\n\t\tresults:\n"
       "\t\t\tduration: "+ std::to_string(e.time) +" ns\n");
   std::string s2 = ss.str();

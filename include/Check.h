@@ -9,7 +9,7 @@
 #include <string>
 
 
-std::string Byte_value(long value);
+std::string Byte(long value);
 
 using namespace std;
 

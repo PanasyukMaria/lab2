@@ -31,7 +31,7 @@ find_package(GTest CONFIG REQUIRED)
 
 add_library(${PROJECT_NAME} STATIC
   # enum your files and delete this comment
-        ${CMAKE_CURRENT_SOURCE_DIR}/sources/Byte_value.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/sources/Byte.cpp
         sources/Time.cpp include/Time.h sources/Check.cpp include/Check.h sources/Check_type.cpp)
 
 add_executable(demo
